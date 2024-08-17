@@ -1,0 +1,21 @@
+ScholarTech est  a été conçu pour offrir des ressources éducatives en informatique, incluant des cours, des exercices, et des préparations aux examens.
+
+Aperçu du site :
+
+Nom du site : ScholarTech
+Thème principal : Informatique et éducation
+
+Sections principales :
+Cours : Une collection de leçons structurées pour différents niveaux.
+Exercices : Des exercices interactifs pour renforcer l'apprentissage.
+Préparation aux examens : Des ressources et des quiz pour se préparer aux examens.
+
+Objectifs du site :
+Offrir une plateforme d'apprentissage en ligne adaptée aux étudiants en informatique.
+Faciliter l'accès aux ressources éducatives en un seul endroit.
+Encourager l'interactivité et l'apprentissage pratique à travers des exercices.
+
+Lien vers le site :
+Vous pouvez accéder au site ScholarTech en suivant ce lien : https://peguyouafo1.github.io/scholarTech/
+
+Noms: OUAFO OUAMBO PEGUY GAYTAN
