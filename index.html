@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+
+    <title>Scholar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="">
+      <nav class="navbar navbar-expand-lg fixed-top color3">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="min-width: 50px; text-align: center"
+            ><img src="assets/img/logo.png" alt="" width="75px"
+          /></a>
+          <h2 class="p-3" style="color: #0a3e9e">ScholarTech</h2>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav w-100 justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">A propos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#cours"
+                  id="coursDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cours
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="coursDropdown">
+                  <li><a class="dropdown-item" href="#cours">Sixième</a></li>
+                  <li><a class="dropdown-item" href="#cours">Cinquième</a></li>
+                  <li><a class="dropdown-item" href="#cours">Quatrième</a></li>
+                  <li><a class="dropdown-item" href="#cours">Troisième</a></li>
+                  <li><a class="dropdown-item" href="#cours">Seconde</a></li>
+                  <li><a class="dropdown-item" href="#cours">Première</a></li>
+                  <li><a class="dropdown-item" href="#cours">Terminale</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#equipe">Équipe</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex me-auto" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/img_carou1.jpg"
+              class="d-block w-100 vh-100 object-fit-cover img-fluid"
+              alt="..."
+            />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="color: #0c275f"
+            >
+              <h5>Explorez Nos Cours</h5>
+              <p class="text-center">
+                Commencez votre aventure en informatique avec nos cours complets
+                et interactifs.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/computer-1185569_1280.jpg"
+              class="d-block w-100 vh-100 object-fit-cover img-fluid"
+              alt="..."
+            />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="color: #0c275f"
+            >
+              <h5>Pratiquez avec des Exercices</h5>
+              <p class="text-center">
+                Renforcez vos connaissances grâce à des exercices pratiques
+                conçus pour vous.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/carou2.jpg"
+              class="d-block w-100 vh-100 object-fit-cover img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Préparez-vous pour les Examens</h5>
+              <p class="text-center">
+                Optimisez votre préparation avec nos outils de révision et
+                simulations d'examens.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="service"></div>
+    </header>
+    <section class="container">
+      <div class="row mb-4 justify-content-around mt-5">
+        <div class="titre text-center m-5" style="">
+          <h5 class="card-text m-3">Nos services</h5>
+          <h2 class="card-title">
+            Avancez à votre rythme avec nos cours et exercices
+          </h2>
+        </div>
+        <div class="col-sm-8 col-md-3 mb-3 mb-sm-0 mt-5">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title me-5 mb-2">Explorez Nos Cours</h5>
+              <p class="card-text">
+                Plongez dans un vaste catalogue de cours couvrant tous les
+                aspects de l'informatique, du développement web à l'intelligence
+                artificielle. Chaque cours est conçu par des experts pour vous
+                fournir des connaissances solides et à jour.
+              </p>
+              <a href="#" class="btn btn-primary">Cours</a>
+            </div>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light"
+            >
+              <img
+                src="/assets/img/img_carou1.jpg"
+                width="100px"
+                height="100px"
+                alt=""
+                class="rounded-pill"
+              />
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-3 mb-3 mb-sm-0 mt-5">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title me-5 mb-2">Pratiquez Vos Compétences</h5>
+              <p class="card-text">
+                Renforcez vos connaissances avec une série d'exercices
+                interactifs conçus pour tester et améliorer vos compétences en
+                programmation, algorithmique, et plus encore. Nos exercices
+                couvrent un large éventail de sujets
+              </p>
+              <a href="#" class="btn btn-primary">Exercices</a>
+            </div>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light"
+            >
+              <img
+                src="/assets/img/computer-1185569_1280.jpg"
+                width="100px"
+                height="100px"
+                class="rounded-pill"
+              />
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-3 mb-3 mb-sm-0 mt-5">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title me-5 mb-2">Préparez-vous aux Examens</h5>
+              <p class="card-text">
+                Maximisez vos chances de réussite avec notre programme de
+                préparation aux examens. Accédez à des simulations d'examens,
+                des questions types, et des ressources d'étude ciblées pour vous
+                aider à réviser efficacement. exceller.
+              </p>
+              <a href="#" class="btn btn-primary">Préparation aux examens</a>
+            </div>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light"
+            >
+              <img
+                src="/assets/img/carou2.jpg"
+                width="100px"
+                height="100px"
+                class="rounded-pill"
+              />
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="about"></div>
+    </section>
+
+    <section class="section about-us mt-5 mb-5 pt-5 pb-5 color2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-1 p-3">
+            <div
+              class="accordion color5 pt-3 pb-3"
+              style="border-radius: 40px"
+              id="accordionExample"
+            >
+              <div class="accordion-item p-3 m-3" style="border-radius: 40px">
+                <h2 class="accordion-header p-3" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Notre Histoire
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse rounded-pill"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body text-justify">
+                    <strong>ScholarTech</strong> a été fondé avec l'objectif de
+                    combler le fossé entre la
+                    <code>théorie et la pratique</code> dans l'enseignement de
+                    l'informatique. Nous croyons que la meilleure façon
+                    d'apprendre est de faire, c'est pourquoi nous offrons
+                    plusieurs cours.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item p-3 m-3" style="border-radius: 40px">
+                <h2 class="accordion-header p-3" id="headingTwo">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo"
+                  >
+                    Notre Vision
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse rounded-pill"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body text-justify">
+                    Devenir
+                    <strong
+                      >la principale plateforme d'apprentissage en ligne</strong
+                    >
+                    pour l'informatique, où chaque individu, indépendamment de
+                    son parcours ou de son expérience, peut
+                    <code>développer les compétences</code> nécessaires pour
+                    prospérer dans un monde numérique en constante évolution.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item p-3 m-3" style="border-radius: 40px">
+                <h2 class="accordion-header p-3" id="headingTree">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTree"
+                    aria-expanded="true"
+                    aria-controls="collapseTree"
+                  >
+                    Notre Mision
+                  </button>
+                </h2>
+                <div
+                  id="collapseTree"
+                  class="accordion-collapse collapse rounded-pill"
+                  aria-labelledby="headingTree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body text-justify">
+                    Notre mission est
+                    <strong
+                      >de démocratiser l'accès à l'éducation en
+                      informatique</strong
+                    >
+                    en offrant des cours de qualité, des ressources interactives
+                    et des projets pratiques. Nous nous engageons
+                    <code
+                      >à soutenir nos apprenants à chaque étape de leur
+                      parcours</code
+                    >, en leur fournissant les outils et les connaissances pour
+                    transformer leur passion pour la technologie en compétences
+                    concrètes et en réussites professionnelles.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 align-self-center">
+            <div class="section-heading">
+              <h6>A propos</h6>
+              <h2>Qui sommes nous?</h2>
+              <p class="text-justify">
+                Nous sommes une équipe de bénévoles des grandes associations
+                françaises qui donnons des cours en association aux personnes
+                débutantes ou en difficulté sur le numérique et aussi à celles
+                plus avancées qui souhaitent apprendre l informatique. Nos cours
+                sont mis en ligne sur Coursinfomatique.fr
+              </p>
+              <div class="main-button">
+                <a href="#" class="btn btn-primary"> Nos cours</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="cours"></div>
+    </section>
+
+    <section>
+      <div class="titre text-center m-5" style="">
+        <h5 class="card-text m-3">Cours recents</h5>
+        <h2 class="card-title">Liste des cours recents</h2>
+        <div
+          class="w-75 m-auto card-title color5 rounded-pill p-2 mt-4 text-center"
+        >
+          <a href="#" class="btn">Algorithme</a>
+          <a href="#" class="btn">Programation</a>
+          <a href="#" class="btn">Systeme d information</a>
+          <a href="#" class="btn">Reseaux</a>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+        <a class="col" href="#" style="text-decoration: none">
+          <div class="card position-relative">
+            <img
+              src="assets/img/algo.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-img-overlay">
+              <span class="card-title color5 rounded-pill p-3 text-center"
+                >Introduction à la Programmation</span
+              >
+            </div>
+            <div class="card-body color2">
+              <h5 class="card-text">Concepts fondamentaux</h5>
+              <p class="card-title text-justify">
+                Découvrez les concepts fondamentaux de la programmation,
+                apprenez à écrire votre premier code et familiarisez-vous avec
+                les bases des langages de programmation .
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="col" href="#" style="text-decoration: none">
+          <div class="card position-relative">
+            <img
+              src="assets/img/css.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-img-overlay">
+              <span class="card-title color5 rounded-pill p-3 text-center"
+                >Développement Web Front-End</span
+              >
+            </div>
+            <div class="card-body color2">
+              <h5 class="card-text">Développement web</h5>
+              <p class="card-title text-justify">
+                Plongez dans le développement web avec des cours sur HTML, CSS
+                et JavaScript. Créez des interfaces utilisateur attrayantes et
+                réactives pour des sites web modernes.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a class="col" href="#" style="text-decoration: none">
+          <div class="card position-relative">
+            <img
+              src="assets/img/ordi.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-img-overlay">
+              <span class="card-title color5 rounded-pill p-3 text-center"
+                >Développement Web Back-End</span
+              >
+            </div>
+            <div class="card-body color2">
+              <h5 class="card-text">Technologies cote serveurs</h5>
+              <p class="card-title">
+                Apprenez à concevoir et à gérer des serveurs web, des bases de
+                données et des API. Explorez des technologies comme Node.js,
+                Express et SQL pour créer des applications web dynamiques.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="col" href="#" style="text-decoration: none">
+          <div class="card position-relative">
+            <img
+              src="assets/img/algo2.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-img-overlay">
+              <span class="card-title color5 rounded-pill p-3 text-center"
+                >Algorithmique et Structures de Données</span
+              >
+            </div>
+            <div class="card-body color2">
+              <h5 class="card-text">Algorithmes avancés</h5>
+              <p class="card-title">
+                Maîtrisez les concepts clés des algorithmes et des structures de
+                données pour résoudre des problèmes complexes et optimiser vos
+                solutions de programmation.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="col" href="#" style="text-decoration: none">
+          <div class="card position-relative">
+            <img
+              src="assets/img/ia.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-img-overlay">
+              <span class="card-title color5 rounded-pill p-3 text-center"
+                >Introduction à l'Intelligence Artificielle</span
+              >
+            </div>
+            <div class="card-body color2">
+              <h5 class="card-text">Intelligence Artificielle</h5>
+              <p class="card-title">
+                Initiez-vous aux principes de l'intelligence artificielle et du
+                machine learning. Explorez des algorithmes de base pour
+                comprendre comment les machines apprennent.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="col" href="#" style="text-decoration: none">
+          <div class="card position-relative">
+            <img
+              src="assets/img/cybersecurite.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-img-overlay">
+              <span class="card-title color5 rounded-pill p-3 text-center"
+                >Cybersécurité et Protection des Données</span
+              >
+            </div>
+            <div class="card-body color2">
+              <h5 class="card-text">Cybersécurité</h5>
+              <p class="card-title">
+                Comprenez les principes de la cybersécurité, apprenez à protéger
+                les systèmes informatiques contre les menaces et découvrez les
+                meilleures pratiques pour sécuriser les données sensibles.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="" class="temoignage mt-5 mb-0 p-5 color2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-1 p-3">
+            <div
+              class="accordion color5 pt-3 pb-3"
+              style="border-radius: 40px"
+              id="accordionExample"
+            >
+              <div class="accordion-item p-3 m-3" style="border-radius: 40px">
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse rounded-pill show"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div
+                    id="carouselExampleInterval"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="4000">
+                        Clara L., Enseignante de Lycée
+
+                        <div class="accordion-body ms-5 me-5 ps-3">
+                          "J'utilise les cours et les exercices de cette
+                          plateforme pour enseigner à mes élèves. Ils apprécient
+                          particulièrement la diversité des exercices, qui les
+                          aide à appliquer les concepts théoriques de manière
+                          concrète."
+                        </div>
+                        <div
+                          class="d-flex flex-row justify-content-center flex-auto mx-"
+                        >
+                          <div
+                            style="width: 100px; height: 75px"
+                            class="text-center"
+                          >
+                            <img
+                              src="assets/img/enseignante.jpg"
+                              alt=""
+                              width="75px"
+                              height="75px"
+                              style="width: 75px; height: 75px"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div>
+                            <h4 class="my-auto text-center">Clara L.</h4>
+                            <p class="my-auto text-center">
+                              Enseignante en Lycée
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="4000">
+                        Marie D., Étudiante en Informatique
+                        <div class="accordion-body ms-5 me-5 ps-3">
+                          "Grâce à cette plateforme, j'ai pu maîtriser les bases
+                          du développement web en quelques mois. Les cours sont
+                          clairs, les exercices sont très pratiques, et la
+                          communauté est toujours là pour m'aider lorsque je
+                          suis bloquée."
+                        </div>
+                        <div
+                          class="d-flex flex-row justify-content-center flex-auto mx-"
+                        >
+                          <div
+                            style="width: 100px; height: 75px"
+                            class="text-center"
+                          >
+                            <img
+                              src="assets/img/etudiante.jpg"
+                              alt=""
+                              width="75px"
+                              height="75px"
+                              style="width: 75px; height: 75px"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div>
+                            <h4 class="my-auto text-center">Marie D.</h4>
+                            <p class="my-auto text-center">
+                              Étudiante en Informatique
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="4000">
+                        Ahmed B., Développeur Junior
+                        <div class="accordion-body ms-5 me-5 ps-3">
+                          "La préparation aux examens m'a vraiment aidé à passer
+                          ma certification en programmation. Les simulations
+                          d'examens et les ressources de révision sont
+                          excellentes et m'ont permis d'aborder l'examen avec
+                          confiance."
+                        </div>
+                        <div
+                          class="d-flex flex-row justify-content-center flex-auto mx-"
+                        >
+                          <div
+                            style="width: 100px; height: 75px"
+                            class="text-center"
+                          >
+                            <img
+                              src="assets/img/dev.jpg"
+                              alt=""
+                              width="75px"
+                              height="75px"
+                              style="width: 75px; height: 75px"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div>
+                            <h4 class="my-auto text-center">Ahmed B.</h4>
+                            <p class="my-auto text-center">
+                              Développeur Junior
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon color5"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden color5">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon color5"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden color5">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 align-self-center">
+            <div class="section-heading">
+              <h6>Temoignages</h6>
+              <h2>Ce que nos apprenants disent de nous</h2>
+              <p>
+                Des étudiants, professionnels, et enseignants partagent comment
+                nos cours, exercices, et outils de préparation aux examens les
+                ont aidés à atteindre leurs objectifs. Leurs histoires
+                inspirantes témoignent de la qualité de notre contenu et de
+                l'impact de notre communauté d'apprentissage
+              </p>
+              <div class="main-button">
+                <a href="#" class="btn btn-primary"> Exercices</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="equipe"></div>
+    </section>
+    <section class="Equipe container row mt-5 m-auto">
+      <div class="titre text-center m-5" style="">
+        <h5 class="card-text m-3">Notre equipe</h5>
+        <h2 class="card-title">Ils facilitent votre apprentissage</h2>
+      </div>
+      <div class="col-sm-6 col-md-3 ">
+        <div class="card">
+          <img
+            src="assets/img/peguy2.jpeg"
+            class="card-img-top rounded-circle"
+            alt="..."
+            height="250px"
+          />
+          <div class="card-body text-center">
+            <h4 class="card-text">Peguy Ouafo</h4>
+            <p class="card-text">
+              Fondateur et Responsable Pédagogique, il conçoit nos cours avec
+              passion et expertise.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card">
+          <img
+            src="assets/img/leandre.jpeg"
+            class="card-img-top rounded-circle"
+            alt="..."
+            height="250px"
+          />
+          <div class="card-body text-center">
+            <h4 class="card-text">Peguy Gaytan</h4>
+            <p class="card-text">
+              Développeur Senior, il assure la qualité technique et l'innovation
+              de notre plateforme.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card">
+          <img
+            src="assets/img/famille.jpeg"
+            class="card-img-top rounded-circle"
+            alt="..."
+            height="250px"
+          />
+          <div class="card-body text-center">
+            <h4 class="card-text">Sandrine Gabrielle</h4>
+            <p class="card-text">
+              Spécialiste en Cybersécurité, elle garantit la protection des
+              données et la sécurité des systèmes informatiques.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card">
+          <img
+            src="assets/img/sandra.jpeg"
+            class="card-img-top rounded-circle"
+            alt="..."
+            height="250px"
+          />
+          <div class="card-body text-center">
+            <h4 class="card-text">Gaytan Ouambo</h4>
+            <p class="card-text">
+              Data Scientist, il crée nos modules sur l'intelligence
+              artificielle et le machine learning.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="contact"></div>
+    </section>
+
+    <section class="contact mt-5 mb-0 p-5 color2">
+      <div class="container row">
+        <div class="col-lg-5 align-self-center">
+          <div class="section-heading">
+            <h6>Contactez nous</h6>
+            <h2>Laissez nous un message</h2>
+            <p>
+              Vous avez des questions, des suggestions, ou avez besoin de
+              support ? N'hésitez pas à nous contacter. Remplissez le formulaire
+              ci-dessous ou utilisez les coordonnées fournies pour nous faire
+              part de vos demandes. Notre équipe est disponible pour vous
+              répondre rapidement et vous assister dans votre parcours
+              d'apprentissage
+            </p>
+            <div class="main-button">
+              <a href="#" class="btn btn-primary"> A propos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 p-3">
+          <div
+            class="accordion color5 pt-3 pb-3"
+            style="border-radius: 40px"
+            id="accordionExample"
+          >
+            <form action="" method="post" class="p-3">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInputInvalid"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInputInvalid">Adresse email</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Votre nom"
+                />
+                <label for="floatingPassword">Nom et prenom</label>
+              </div>
+              <div class="form-floating mt-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+                <label for="floatingTextarea2">Votre message</label>
+              </div>
+              <div class="m-auto text-center">
+                <input
+                  type="submit"
+                  class="btn btn-primary btn-lg w-50 ms-auto mt-3 p-2"
+                  value="Envoye"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="m-0 pb-0">
+      <div class="container-fluid row color0 pt-5 pb-5 me-0 ms-0 mb-0">
+        <div class="col-md-3 text-center">
+          <div class="m-auto">
+            <img
+              src="assets/img/logo.png"
+              width="75px"
+              class="rounded-pill"
+              style="background-color: white"
+            />
+          </div>
+          <p class="p-2" style="text-align: center">
+            Transformez votre passion pour l'informatique en compétences
+            concrètes.
+          </p>
+          <div class="mb-3">
+            <i class="fab fa-facebook fa-2x me-3"></i>
+            <i class="fab fa-linkedin fa-2x me-3"></i>
+            <i class="fab fa-skype fa-2x me-3" aria-hidden="true"></i>
+            <i class="fab fa-telegram fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h3 class="p-3">Liens utiles</h3>
+          <ul class="list-unstyled ps-5">
+            <li>
+              <a href="#" class="text-light text-decoration-none">A propos</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">Nos cours</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">Services</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">A propos</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">Equipe</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="p-3">Nos cours</h3>
+          <ul class="list-unstyled ps-5">
+            <li>
+              <a href="#" class="text-light text-decoration-none">Algorithme</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none"
+                >Programmation</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">Reseaux</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none"
+                >Systemes d'information</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none"
+                >Architectures</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="p-3">Contactez nous</h3>
+          <ul class="list-unstyled ps-5">
+            <li>
+              <strong>Adresse:</strong>526 Melrose Street, Yaounde, Cameroun.
+            </li>
+            <li><strong>Telephone:</strong>+1 438 566 5555.</li>
+            <li><strong>Email:</strong>info@scholarTech.cm</li>
+          </ul>
+          <form action="" method="post" class="ps-5">
+            <input type="email" placeholder="Votre email" class="me-0 p-2" />
+            <input
+              type="submit"
+              value="Envoye"
+              class="ms-0 p-2 color5 btn btn-pill"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid row color10 p-4 m-0">
+        <p class="text-center">
+          &copy; 2024 ScholarTech. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all navigation links
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        // Add click event listener to each link
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            // Remove active class from all links
+            navLinks.forEach((nav) => nav.classList.remove("active"));
+
+            // Add active class to the clicked link
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

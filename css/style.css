@@ -1,0 +1,66 @@
+body {
+    margin: 0px !important;
+    padding-top: 56px;
+    font-size: 1.1em;
+  }
+  .navbar .nav-link{
+    font-size: 1.2em;
+  }
+  .navbar .nav-link.active {
+    border-bottom: 1.2px solid #0055fb;
+    color: #0348d3; /* Background color for the active link */
+    padding: 10px 15px; /* Padding for the active link */
+    font-weight: bold;
+    font-size: 1.2em;
+
+  }
+
+  .navbar .nav-link:hover {
+    color: #0348d3;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+  .color1 {
+    background-color: #ecf8ff;
+  }
+  .color2 {
+    background-color: #d4edff;
+  }
+  .color3 {
+    background-color: #b3e1ff;
+  }
+  .color4 {
+    background-color: #7fd0ff;
+  }
+  .color5 {
+    background-color: #43b4ff;
+  }
+  .color6 {
+    background-color: #1890ff;
+  }
+  .color7 {
+    background-color: #006eff;
+  }
+  .color8 {
+    background-color: #0055fb;
+    color: aliceblue;
+  }
+  .color9 {
+    background-color: #0348d3;
+  }
+  .color10 {
+    background-color: #0a3e9e;
+    color: aliceblue;
+  }
+  .color0 {
+    background-color: #0c275f;
+    color: white;
+  }
+  p,
+  .text-justify {
+    text-align: justify;
+  }
